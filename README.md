@@ -9,16 +9,16 @@
 並將[web annotaion data model](https://www.w3.org/TR/annotation-model/)的觀念加入
 
 
-### 使用方法
+## 使用方法
 
-## 全域安裝
+### 全域安裝
 
 *npm 5.0.3
 
 *nvm 0.35.0
 
 
-## 進入iiif-manifest-editor資料夾
+### 進入iiif-manifest-editor資料夾
 *nvm install v8.1.4
 *npm install
 
