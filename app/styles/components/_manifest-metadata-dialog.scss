@@ -1,0 +1,28 @@
+.manifest-metadata-dialog {
+  
+  .source-manifest-metadata {
+    max-height: 400px;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+
+  .metadata-field-row {
+    margin-bottom: 15px;
+
+    .metadata-field-label {
+      font-weight: bold;
+      word-wrap: break-word;
+    }
+
+    .metadata-field-value {
+      white-space: normal; 
+      word-wrap: break-word;
+      padding-right: 50px;
+    }  
+
+    .source-attribution-logo {
+      max-width: 100%;
+      max-height: 150px;
+    }
+  }
+}

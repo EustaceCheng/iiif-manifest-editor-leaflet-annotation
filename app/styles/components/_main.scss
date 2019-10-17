@@ -1,0 +1,33 @@
+html { font-size: 62.5%; }
+
+.container {
+  h1 {
+    text-align: center;
+  }
+}
+
+.modal-header {
+  background-color: #444;
+  color:whitesmoke;
+  padding:8px 15px;
+
+  button.close {
+    color: white;
+    opacity: 1.0;
+    text-shadow: white;
+
+    &:hover {
+      color: whitesmoke;
+      opacity: 0.9;
+    }
+  }
+
+  .modal-title {
+    font-weight:normal;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    font-size:16px;
+  }
+}

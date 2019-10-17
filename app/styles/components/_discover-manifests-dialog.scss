@@ -1,0 +1,40 @@
+.discover-manifests {
+  .filter-manifests {
+    margin: 10px 0;
+  }
+
+  .discover-content-list {
+    height: 400px;
+    overflow: scroll;
+  }
+
+  .highlight {
+    background-color: yellow;
+    a {
+      color: red;
+    }
+  }
+
+  .content-providers-list {
+    text-align: left;
+  }
+
+  li.manifest-list-item {
+    margin-bottom: 10px;
+  }
+
+  .discover-loading-indicator {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .content-provider-item {
+    .content-provider-logo {
+      max-width: 300px;
+      max-height: 40px;
+      margin-right: 10px;
+    }
+    margin-bottom: 20px;
+  }
+}

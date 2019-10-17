@@ -1,0 +1,256 @@
+.metadata-sidebar-container {
+  border: $mainComponentContainerBorder;
+  display: none;
+  width: 30%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 15px;
+
+  .tab-content {
+    padding-right: 10px;
+  }
+
+  .panel-heading {
+    h4 {
+      a {
+        text-decoration:none;
+      }
+    }
+  }
+
+  .metadata-sidebar-controls {
+    padding: 15px 0;
+    text-align: right;
+
+    a.help-icon {
+      color: $gray-dark;
+      font-size: 1.2em;
+      margin: 5px 10px 0 10px;
+    }
+
+    .hide-sidebar {
+      cursor: pointer;
+      float: left;
+      width: 33px;
+    }
+
+    .metadata-sidebar-buttons {
+      text-align: right;
+
+      .metadata-sidebar-button {
+        margin-left: 5px;
+      }
+
+      .manifest-actions-menu {
+        margin-left: 10px;
+
+        .dropdown-menu {
+          margin-top: 10px;
+        }
+
+        li {
+          padding: 6px 14px;
+          cursor: pointer;
+          list-style-type: none;
+        }
+
+        li:hover {
+          background-color: #333;
+          color: #eee;
+        }
+      }
+    }
+
+    .open-sequence-button {
+      text-align: left;
+      margin: 15px 0 0 0;
+    }
+
+    .fetch-remote-manifest-indicator {
+      margin-top:20px;
+      text-align: center;
+    }
+
+    .fetch-remote-manifest-indicator i {
+      font-size: 2rem;
+    }
+  }
+
+  #metadata-accordion {
+
+    #bulk-actions-panel-heading {
+      background-color: #444;
+      color: whitesmoke;
+    }
+
+    #bulk-actions-panel {
+      label.control-label {
+        text-align: left;
+      }
+    }
+
+    .metadata-sidebar-panel-subtitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .metadata-sidebar-panel {
+      height: 65vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      .row {
+        margin-bottom: 15px;
+      }
+
+      dl {
+        margin-bottom: 15px;
+        position: relative;
+        border:1px solid #ccc;
+        border-radius: 6px 6px 4px 4px;
+
+        &:hover {
+          border: 1px solid $iiifBlue;
+        }
+
+        dt {
+          padding: 1px 5px 1px 8px;
+          border-bottom: 1px solid #eee;
+          display: block;
+          background-color: $iiifBlue;
+          border-radius: 5px 5px 0 0;
+          color: white;
+        } 
+
+        dd.metadata-field-value {
+          color: #555;
+          display: block;
+          min-height: 25px;
+          padding: 1px 5px 1px 8px;
+
+          &:hover {
+            color: #000;
+            cursor: pointer;
+          }
+        }
+
+        dd.metadata-field-delete {
+          position: absolute;
+          right: 4px;
+          top: 2px;
+
+          a {
+            color:white;
+          }
+        }
+      }
+
+      .metadata-field-label {
+        font-weight:normal;
+        letter-spacing: 1px;
+        padding-right: 5px;
+
+        a {
+          color: white;
+        }
+
+        textarea {
+          color: #000;
+          width: 95%;
+          height: 25px;
+          padding-left: 5px;
+          margin-top: 5px;
+        }
+
+        select {
+          color: #000;
+        }
+      }
+
+      .image-annotation-fetch-error {
+        margin-top: 15px;
+      }
+
+      .metadata-field-value {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        word-wrap: break-word;
+
+        textarea {
+          padding: 5px 0 0 5px;
+          margin-top: 2px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  .add-replace-image-on-canvas-button {
+    margin-top: 15px;
+  }
+
+  .metadata-sidebar-canvas {
+    text-align: center;
+
+    .canvas-label {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.metadata-sidebar-container.visible {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  #metadata-accordion {
+    .metadata-sidebar-panel {
+      dl {
+        dt {
+          min-width: 0;
+        }
+
+        dt, dd {
+          float: none;
+        }
+
+        dd.metadata-field-value {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+}
+
+.btn-show-sidebar {
+  border-radius: 0;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3%;
+
+  i {
+    padding-top: 15px;
+  }
+
+  &.visible {
+    display: inline;
+  }
+}
+
+#imageAnnotationUpdateHelp {
+  margin-top:5px;
+  padding:15px;
+  border:1px solid #eee;
+  border-radius:5px;
+  background-color: lighten($gray-light, 50%);
+
+  li {
+    margin-bottom:10px;
+  }
+}

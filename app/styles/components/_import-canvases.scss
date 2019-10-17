@@ -1,0 +1,171 @@
+.import-canvases-container {
+  position: relative;
+
+  .discover-manifests {
+    margin: 20px 0;
+  }
+
+  .discover-manifests-dialog-open-button {
+    color: white;
+    background-color: black;
+  }
+
+
+  .source-manifest-browser-narrow-view {
+    float: left;
+    width: 70%;
+  }
+
+  .source-manifest-browser-wide-view {
+    float: left;
+    width: 97%;
+  }
+
+  .source-manifest-browser {
+    position: relative;
+    border: $mainComponentContainerBorder;
+    height: 75vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    background-color: rgb(245, 245, 245);
+
+    .no-source-manifests-message {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      border: 1px solid;
+      font-size: 1.2em;
+    }
+
+    #local-storage-error-message {
+      display: none;
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      width: 80%;
+      border: 1px solid;
+      font-size: 1.2em;
+      z-index: 2;
+    }
+
+    .source-manifest-window {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+      min-width: 500px;
+      height: 100%;
+
+      .source-manifest-viewer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: -30px;
+
+        .navigation-arrow {
+          z-index: 2;
+          opacity: 0.7;
+          color: white;
+          background: transparent;
+          font-size: 300%;
+          top: 50%;
+        }
+
+        .navigation-arrow-left {
+          position: absolute;
+          float: left;
+          left: 20px;
+        }
+
+        .navigation-arrow-right {
+          position: absolute;
+          float: right;
+          right: 20px;
+        }
+
+        .navigation-arrow:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+
+        .openseadragon-container, .openseadragon {
+          height: 72vh;
+          border-left: 1px solid $gray-light;
+          border-right: $mainComponentContainerBorder;
+        }
+
+        .osd-custom-toolbar {
+          position: relative;
+          top: 40px;
+          margin-left: -10px;
+        }
+      }
+
+      .source-manifest-metadata-info-button i {
+        padding: 4px 10px 4px 11px;
+        border-radius: 5px;
+      }
+
+      .source-manifest-remove-button {
+        padding: 4px 7px 4px 8px;
+        border-radius: 5px;
+      }
+
+      .source-manifest-thumbnail-strip {
+        position: relative;
+        float: left;
+        width: 100%;
+        display: flex; 
+        bottom: 137px;
+        background-color: rgba(255,255,255,0.7);
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        overflow-x: hidden;
+        white-space: nowrap;
+      }
+
+      .source-manifest-thumbnail-strip:hover {
+        opacity: 1.0;
+        overflow-x: scroll;
+      }
+
+      .source-manifest-thumbnail-strip-canvas {
+        text-align: center;
+        margin: 5px 5px 0 5px;
+
+        .LazyLoad {
+          min-width: 75px;
+          min-height: 100px;
+          border-radius: 3px;
+          border: 1px solid #eee;
+          background-color: transparent;
+        }
+
+        img.selected-canvas {
+          opacity: 0.5;      
+        }
+
+        .canvas-label {
+          position: relative;
+          color: white;
+          background-color: rgba(0,0,0,0.6);
+          border-radius: 2px;
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .remote-manifest-url-load-error {
+      margin-top:20px;
+    }
+  }
+
+  .sequence-thumbnail-strip {
+    border: 2px solid $gray-light;
+    height: 25vh;
+    display: flex;
+    overflow-x: scroll;
+  }
+}
