@@ -13,16 +13,15 @@
 
 ### 全域安裝
 
-*npm 5.0.3
+* npm 5.0.3
 
-*nvm 0.35.0
+* nvm 0.35.0
 
 
 ### 進入iiif-manifest-editor資料夾
-*nvm install v8.1.4
-*npm install
-
-*node-sass 4.12.0 [JavaScript]
+* nvm install v8.1.4
+* npm install
+* node-sass 4.12.0 [JavaScript]
 
 
 
