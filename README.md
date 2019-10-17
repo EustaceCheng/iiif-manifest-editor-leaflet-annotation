@@ -1,8 +1,8 @@
 # iiif-manifest-editor-leaflet-annotation #
 
-根據 https://github.com/bodleian/iiif-manifest-editor 延伸的作品
-將其中顯示圖片的部分由leaflet取代https://leafletjs.com/
-並將web annotaion的觀念加入https://www.w3.org/TR/annotation-model/
+根據 [iiif-manifest-editor](https://github.com/bodleian/iiif-manifest-editor) 延伸的作品
+將其中顯示圖片的部分由[leaflet](https://leafletjs.com/)取代
+並將[web annotaion data model](https://www.w3.org/TR/annotation-model/)的觀念加入
 
 
 使用方法
