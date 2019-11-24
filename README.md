@@ -28,7 +28,7 @@
 ### 進入iiif-manifest-editor資料夾
 * nvm install v8.1.4
 * npm install
-* node-sass 4.12.0 [JavaScript]
+* npm install node-sass@4.12.0 
 
 ### 如何執行
 * npm run build
