@@ -30,7 +30,9 @@
 * npm install
 * node-sass 4.12.0 [JavaScript]
 
-
+### 如何執行
+* npm run build
+* node server.js
 
 
 
